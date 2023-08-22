@@ -42,7 +42,7 @@ const ExperienceForm = ({ onSubmit }) => {
 
   return (
     <VStack spacing={4} w={"full"} alignItems={"left"}>
-      <Text>Experience</Text>
+      <Text>Experience Details</Text>
       <HStack>
         <Button onClick={handleAddExperience}>+</Button>
         <Button onClick={handleRemoveExperience}>-</Button>

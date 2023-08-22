@@ -25,8 +25,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Container maxW={"90%"} p={5}>
+      <main style={{ backgroundColor: "#171717", minHeight: "100vh" }}>
+        <Container maxW={"90%"} p={5} color={"#FFFFFF"}>
           <Text textAlign={"center"}>Form</Text>
           <FormOne />
         </Container>
