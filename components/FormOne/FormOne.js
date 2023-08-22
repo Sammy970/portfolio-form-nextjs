@@ -15,12 +15,13 @@ import {
   Textarea,
 } from "@chakra-ui/react";
 import About from "../About/About";
+import Project from "../Project/Project";
 
 const FormOne = () => {
   return (
     <>
       <Accordion allowMultiple>
-        <AccordionItem>
+        <AccordionItem p={3}>
           <h2>
             <AccordionButton>
               <Box as="span" flex="1" textAlign="left">
@@ -33,7 +34,7 @@ const FormOne = () => {
             <About />
           </AccordionPanel>
         </AccordionItem>
-        <AccordionItem>
+        <AccordionItem p={3}>
           <h2>
             <AccordionButton>
               <Box as="span" flex="1" textAlign="left">
@@ -43,7 +44,7 @@ const FormOne = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <About />
+            <Project />
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
