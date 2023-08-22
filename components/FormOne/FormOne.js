@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import InputProject from "./InputProject";
 import {
+  Accordion,
+  AccordionButton,
+  AccordionIcon,
+  AccordionItem,
+  AccordionPanel,
+  Box,
   FormControl,
   FormLabel,
   Grid,
@@ -13,13 +19,34 @@ import About from "../About/About";
 const FormOne = () => {
   return (
     <>
-      <About />
-
-      {/* <Grid w={"full"} gap={6} templateColumns={"auto auto auto"}>
-        <GridItem>
-          <InputProject />
-        </GridItem>
-      </Grid> */}
+      <Accordion allowMultiple>
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box as="span" flex="1" textAlign="left">
+                About Me Form
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4}>
+            <About />
+          </AccordionPanel>
+        </AccordionItem>
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box as="span" flex="1" textAlign="left">
+                Project Form
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4}>
+            <About />
+          </AccordionPanel>
+        </AccordionItem>
+      </Accordion>
     </>
   );
 };

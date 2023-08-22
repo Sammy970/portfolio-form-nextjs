@@ -2,13 +2,14 @@ import {
   Container,
   FormControl,
   FormLabel,
+  Text,
   Textarea,
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
-import Aboutme from "./AboutComponents/Aboutme";
-import ExperienceForm from "./AboutComponents/ExperienceForm";
-import EducationForm from "./AboutComponents/EducationForm";
+import Aboutme from "./AboutFormComponents/AboutmeForm";
+import ExperienceForm from "./AboutFormComponents/ExperienceForm";
+import EducationForm from "./AboutFormComponents/EducationForm";
 
 const About = () => {
   const handleAboutMeSubmit = (aboutMeData) => {
@@ -28,6 +29,7 @@ const About = () => {
     <>
       <Container maxW={"full"}>
         <VStack w={"full"} spacing={4}>
+          <Text>About Form</Text>
           <Aboutme onSubmit={handleAboutMeSubmit} />
           <ExperienceForm onSubmit={handleExpSubmit} />
           <EducationForm onSubmit={handleEducationSubmit} />
